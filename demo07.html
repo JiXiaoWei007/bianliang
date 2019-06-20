@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>作业</title>
+	</head>
+	<body id="yanse">
+		<input type="button" value="变色" id="huanse">
+		<script type="text/javascript">
+			//循环语句练习
+			var a=1;
+			while(a<=10){
+				console.log('1');
+				console.log('2');
+				console.log('3');
+				console.log('4');
+			a++;	
+			}
+			console.log(a);
+			var a=1;
+			while(a<=100){
+				console.log(a);
+				a++;
+			}
+			
+			var a=1;
+			var b=0;
+			while(b<50){
+				a=b++*2+1;
+				console.log(a);
+			}
+			
+			var a=1;
+			while(a<=100){
+				console.log(a);
+				a=a+2;
+			}
+			//for循环
+			
+			for(var a=1;a<=100;a++){
+				console.log(a);
+			}
+			//do while 循环
+			var a=1;
+			do{
+				console.log(a++);
+			}while(a<=100);
+			
+			
+			var he=0;
+			for(var a=1/2;a<=100;a++){
+				he=he+a;
+				
+			}console.log(he);
+			
+			
+			var he=0;
+			for(var a=0;a<=10;a++){
+				he=a+2;
+				console.log(he);
+			}
+			//ceshi
+			var ceshi=false;
+			if(!ceshi){
+				console.log('55555');
+				console.log('666666666');
+			} else{
+				console.log('11111111111111');
+			}
+			console.log('ceshi');
+			//	5种颜色切换
+			var anniu=document.getElementById("huanse")
+			var bianse=document.getElementById("yanse")
+			var curr="red";
+			anniu.onclick=function(){
+				yanse.style="background-color:"+curr+";";
+				if(curr=="red"){
+					curr="yellow";
+				}else if(curr=='yellow'){
+					curr='green';
+				}else if(curr=='green'){
+					curr="blue";
+					
+				}else if(curr=='blue'){
+					curr="black";
+				} else{
+					curr="red";
+				}
+			}
+				
+			
+		</script>
+	</body>
+</html>
